@@ -22,6 +22,7 @@ function Form({ onAddItems }) {
         value={quantity}
         onChange={(e) => setQuantity(Number(e.target.value))}
       >
+        console.log('Welcome')
         {Array.from({ length: 30 }, (_, i) => i + 1).map((num) => (
           <option value={num} key={num}>
             {num}
